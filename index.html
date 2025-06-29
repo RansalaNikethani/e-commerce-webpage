@@ -12,10 +12,10 @@
             <div class="md:col-span-2 lg:col-span-2  bg-white md:px-3">
                 <!--product menu-->
                 <ul id="product-categories" class="sticky top-0 bg-white z-40 p-3  flex gap-4 flex-wrap place-items-center text-gray-500 font-medium">
-                    <li class="active:text-gray-800 border rounded-full px-3 py-2 cursor-pointer">All product<span class="active:bg-lime-400 bg-gray-200 px-2 py-1 rounded-full ml-2 text-sm">320</span></li>
-                    <li class="active:text-gray-800 border rounded-full px-3 py-2 cursor-pointer">Shoes<span class="active:bg-lime-400 bg-gray-200 px-2 py-1 rounded-full ml-2 text-sm">150</span></li>
-                    <li class="active:text-gray-800 border rounded-full px-3 py-2 cursor-pointer">Clothing<span class="active:bg-lime-400 bg-gray-200 px-2 py-1 rounded-full ml-2 text-sm">200</span></li>
-                    <li class="active:text-gray-800 border rounded-full px-3 py-2 cursor-pointer">Other Products<span class="active:bg-lime-400 bg-gray-200 px-2 py-1 rounded-full ml-2 text-sm">100</span></li>
+                    <li class=" border text-gray-900 rounded-full px-3 py-2 cursor-pointer">All product<span class="bg-lime-200  px-2 py-1 rounded-full ml-2 text-sm">320</span></li>
+                    <li class=" border rounded-full px-3 py-2 cursor-pointer">Shoes<span class="active:bg-lime-400 bg-gray-200 px-2 py-1 rounded-full ml-2 text-sm">150</span></li>
+                    <li class=" border rounded-full px-3 py-2 cursor-pointer">Clothing<span class="active:bg-lime-400 bg-gray-200 px-2 py-1 rounded-full ml-2 text-sm">200</span></li>
+                    <li class=" border rounded-full px-3 py-2 cursor-pointer">Other Products<span class="active:bg-lime-400 bg-gray-200 px-2 py-1 rounded-full ml-2 text-sm">100</span></li>
                     <li class="border rounded-full px-2 py-2 cursor-pointer  md:ml-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="#aaa7a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"/></svg>
                     </li>
@@ -160,8 +160,49 @@
                     </div>          
                 </div>
             
-
-
+            <div class="bg-white border border-gray-200 mt-8 rounded-3xl p-5">
+            <!-- Promo Row -->
+            <div class="flex items-center justify-between bg-gray-100 rounded-full px-4 py-2 mb-4">
+                <div class="flex items-center gap-2 font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"><path stroke="black" stroke-width="2" d="M12 6v6l4 2"/></svg>
+                    Promo New User (10%)
+                </div>
+                <button class="bg-lime-200 text-black font-medium rounded-full px-4 py-1">Change Promo</button>
+            </div>
+            <!-- Totals -->
+            <div class="rounded-2xl border border-gray-100 bg-white px-4 py-2 mb-4">
+                <div class="flex justify-between py-1">
+                    <span class="text-gray-500">Sub-Total</span>
+                    <span class="font-semibold">$370.67</span>
+                </div>
+                <div class="flex justify-between py-1">
+                    <span class="text-gray-500">Tax (12%)</span>
+                    <span class="font-semibold">$44.48</span>
+                </div>
+                <div class="flex justify-between py-1">
+                    <span class="text-gray-500">Discount</span>
+                    <span class="font-semibold text-red-500">- $41.51</span>
+                </div>
+                <hr class="my-2">
+                <div class="flex justify-between py-1">
+                    <span class="text-gray-500 font-semibold">Total Payment</span>
+                    <span class="font-bold text-lg">$373.64</span>
+                </div>
+            </div>
+            <!-- Payment Method -->
+            <div class="flex items-center justify-between bg-white border border-gray-100 rounded-full px-4 py-2 mb-4">
+                <div class="flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="w-7 h-7 rounded-full">
+                    <span class="font-medium">Credit Card</span>
+                </div>
+                <button class="flex items-center gap-1 bg-gray-100 rounded-full px-4 py-1 font-medium">
+                    Change Method
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"><path stroke="black" stroke-width="2" d="M9 6l6 6-6 6"/></svg>
+                </button>
+            </div>
+            <!-- Continue Button -->
+            <button class="bg-lime-300 hover:bg-lime-400 w-full mt-2 p-3 rounded-full font-semibold text-lg transition">Continue</button>
+        </div>
 
             </div>    
         </div>
