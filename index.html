@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="px-5 mt-5" >
-        <div class="grid md:grid-cols-3 gap-8 ">
-            <div class="col-span-2  bg-white ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+            <div class="md:col-span-2 lg:col-span-2  bg-white md:px-3">
                 <!--product menu-->
                 <ul id="product-categories" class="sticky top-0 bg-white z-40 p-3  flex gap-4 flex-wrap place-items-center text-gray-500 font-medium">
                     <li class="active:text-gray-800 border rounded-full px-3 py-2 cursor-pointer">All product<span class="active:bg-lime-400 bg-gray-200 px-2 py-1 rounded-full ml-2 text-sm">320</span></li>
@@ -85,9 +85,86 @@
 
                 </div>
             </div>
-            <div class="bg-gray-200 rounded-lg">2</div>
-        </div>
 
+            <!--right-side-->
+            <div class="bg-gray-100 rounded-lg p-5">
+                <div class="flex justify-between">
+                    <p class="text-xl font-medium">Detail Transaction</p>
+                    <button class=" bg-white font-medium border rounded-full px-4 py-2">
+                        <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 5h22m-8.75-4h-4.5a1.5 1.5 0 0 0-1.5 1.5V5h7.5V2.5a1.5 1.5 0 0 0-1.5-1.5m-4.5 16.75v-7.5m4.5 7.5v-7.5m4.61 11.37A1.49 1.49 0 0 1 17.37 23H6.63a1.49 1.49 0 0 1-1.49-1.38L3.75 5h16.5z"/></svg>
+                        &nbsp;&nbsp;Reset Order
+                    </button>
+                </div>
+
+                <!--cart items-->
+                <div class="mt-5 flex bg-white border border-gray-200 rounded-lg p-3">
+                    <div class="gap-4">
+                        <div class="w-24 h-24 border border-gray-200 rounded-lg">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.83PegFYJ28tpMPi2psManwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="h-full w-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between w-full">
+                        <div class="flex flex-row justify-between">
+                            <div class="p-2 font-medium">
+                                <P>Nike V2K Run New</P>
+                                <div class="flex flex-row">
+                                    <span class="bg-gray-100 text-gray-500 text-xs px-2 py-1 rounded-full">Size 42</span>
+                                    <span class="bg-gray-100 text-gray-500 text-xs px-2 py-1 rounded-full">Green</span>
+                                </div>
+                            </div>
+                            <div class="p-2 ">
+                                <button class="bg-red-500 p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><path fill="none" stroke="#fff" d="M4.5 3V1.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V3M0 3.5h15m-13.5 0v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-10M7.5 7v5m-3-3v3m6-3v3" stroke-width="1"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                         <div class="flex p-2 flex-row justify-between">
+                            <button class="w-7 h-7 rounded-full border border-gray-300 text-lg flex items-center justify-center">-</button>
+                            <span class="mx-2 font-semibold text-base">01</span>
+                            <button class="w-7 h-7 rounded-full bg-lime-200 text-lime-700 text-lg flex items-center justify-center">+</button>
+                            <span class="ml-auto text-gray-500 text-lg ">Total</span>
+                            <span class="ml-2 font-semibold text-lg">$182.72</span>
+                         </div>
+                    </div>          
+                </div>
+
+                <!--cart items-->
+                <div class="mt-5 flex bg-white border border-gray-200 rounded-lg p-3">
+                    <div class="gap-4">
+                        <div class="w-24 h-24 border border-gray-200 rounded-lg">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.Fe4qZfZ1KwwDirwGsumOeQHaG1?rs=1&pid=ImgDetMain&o=7&rm=3" class="h-full w-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between w-full">
+                        <div class="flex flex-row justify-between">
+                            <div class="p-2 font-medium">
+                                <P>Nike V2K Run New</P>
+                                <div class="flex flex-row">
+                                    <span class="bg-gray-100 text-gray-500 text-xs px-2 py-1 rounded-full">Size 42</span>
+                                    <span class="bg-gray-100 text-gray-500 text-xs px-2 py-1 rounded-full">White</span>
+                                </div>
+                            </div>
+                            <div class="p-2 ">
+                                <button class="bg-red-500 p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><path fill="none" stroke="#fff" d="M4.5 3V1.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V3M0 3.5h15m-13.5 0v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-10M7.5 7v5m-3-3v3m6-3v3" stroke-width="1"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                         <div class="flex p-2 flex-row justify-between">
+                            <button class="w-7 h-7 rounded-full border border-gray-300 text-lg flex items-center justify-center">-</button>
+                            <span class="mx-2 font-semibold text-base">01</span>
+                            <button class="w-7 h-7 rounded-full bg-lime-200 text-lime-700 text-lg flex items-center justify-center">+</button>
+                            <span class="ml-auto text-gray-500 text-lg ">Total</span>
+                            <span class="ml-2 font-semibold text-lg">$182.72</span>
+                         </div>
+                    </div>          
+                </div>
+            
+
+
+
+            </div>    
+        </div>
     </div>
 </body>
 </html>
